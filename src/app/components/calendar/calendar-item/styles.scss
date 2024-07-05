@@ -1,0 +1,41 @@
+.calendar-item {
+  border: 1px solid;
+  border-left: none;
+  text-align: center;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+
+  &:first-of-type {
+    border-left: 1px solid;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 5px 5px 0;
+  }
+
+  &-header {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px dotted;
+    padding: 4px;
+    text-transform: capitalize;
+  }
+
+  &-body {
+    display: block;
+    padding-block: 32px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    p {
+      user-select: none;
+      touch-action: none;
+      pointer-events: none;
+      text-wrap: wrap;
+    }
+
+    &.selected {
+      box-shadow: inset 0px 0px 0px 2px white;
+    }
+  }
+}

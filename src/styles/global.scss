@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background: url("https://images2.alphacoders.com/130/1305211.png") no-repeat
+    center / cover;
+  backdrop-filter: blur(3px);
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 1vw;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
